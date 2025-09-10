@@ -1,0 +1,293 @@
+/* Produk Kami */
+
+#testimoni-container {
+  background-color: transparent;
+}
+
+.produk-kami {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  color: #f1f1f1;
+  justify-content: center;
+  align-items: center;
+  padding: 60px;
+  padding-left: 100px;
+  gap: 20px;
+  width: 100%;
+}
+.produk-kami-left h1 {
+  font-size: 40px;
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+.produk-kami-left h3 {
+  font-size: 34px;
+  background: linear-gradient(135deg, #f1f1f1, #0971a1);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: transparent;
+}
+.produk-kami-left .produk-kami-item ul {
+  margin-top: 20px;
+  margin-left: 20px;
+}
+.produk-kami-left .produk-kami-item ul li {
+  list-style-type: circle;
+}
+.produk-kami-right {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.produk-kami-right img {
+  width: 500px;
+}
+
+@media screen and (max-width: 1276px) {
+  .produk-kami {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    color: #f1f1f1;
+    justify-content: center;
+    align-items: center;
+    padding: 60px;
+    padding-right: 0px;
+    padding-left: 50px;
+    gap: 5px;
+    width: 100%;
+  }
+  .produk-kami-right img {
+    width: 450px;
+  }
+  .produk-kami-right {
+    display: flex;
+    justify-content: center;
+  }
+}
+@media screen and (max-width: 900px) {
+  .produk-kami-left h1 {
+    font-size: 36px;
+    font-weight: 600;
+    margin-bottom: 5px;
+  }
+  .produk-kami-left h3 {
+    font-size: 28px;
+    background: linear-gradient(135deg, #f1f1f1, #0971a1);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: transparent;
+  }
+  .produk-kami-left .produk-kami-item ul li {
+    font-size: 14px;
+    margin-bottom: 2px;
+  }
+  .produk-kami-right img {
+    width: 350px;
+  }
+}
+@media screen and (max-width: 680px) {
+  #produk-kami-container {
+    height: 100%;
+  }
+  .produk-kami {
+    display: grid;
+    grid-template-columns: 1fr;
+    color: #f1f1f1;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    padding: 60px;
+    padding-right: 0px;
+    padding-left: 50px;
+    gap: 20px;
+    width: 100%;
+  }
+  .produk-kami-right {
+    display: flex;
+    justify-content: flex-start;
+  }
+  .produk-kami-right img {
+    width: 350px;
+  }
+}
+@media screen and (max-width: 420px) {
+  .produk-kami {
+    display: grid;
+    grid-template-columns: 1fr;
+    color: #f1f1f1;
+    justify-content: center;
+    align-items: center;
+    padding: 60px;
+    padding-right: 0px;
+    padding-left: 30px;
+    gap: 5px;
+    width: 100%;
+  }
+  .produk-kami-right img {
+    width: 300px;
+  }
+  .produk-kami-right {
+    display: flex;
+    justify-content: flex-start;
+  }
+  .produk-kami-left h1 {
+    font-size: 30px;
+    font-weight: 600;
+    margin-bottom: 5px;
+  }
+  .produk-kami-left h3 {
+    font-size: 24px;
+    background: linear-gradient(135deg, #f1f1f1, #0971a1);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: transparent;
+  }
+  .produk-kami-left .produk-kami-item ul li {
+    font-size: 12px;
+    margin-bottom: 2px;
+  }
+}
+
+#produk-showcase-container {
+  background-color: #061626;
+  margin-top: 300px;
+}
+
+/* apa kata mereka */
+/* Styling untuk bagian Apa Kata Mereka */
+
+.reviews {
+  padding: 50px 0;
+  /* background-color: #f8f8f8; */
+}
+
+.review-title {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.review-title h1 {
+  font-size: 2.5rem;
+  margin-bottom: 15px;
+  /* color: #333; */
+}
+
+.review-title p {
+  max-width: 700px;
+  margin: 0 auto;
+  /* color: #666; */
+}
+
+/* Styling untuk ulasan-items */
+.ulasan-items {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding: 0 50px;
+  flex-wrap: wrap;
+}
+
+.ulasan-item {
+  background: linear-gradient(135deg, #0971a1, #0a1f35);
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  width: 300px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.ulasan-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+}
+
+.ulasan-item-img {
+  height: 200px;
+  overflow: hidden;
+}
+
+.ulasan-item-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.ulasan-item:hover .ulasan-item-img img {
+  transform: scale(1.05);
+}
+
+.ulasan-item-identity {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 20px;
+  color: #f1f1f1;
+  /* border-bottom: 1px solid #eee; */
+}
+
+.ulasan-item-name h3 {
+  font-size: 1.1rem;
+  margin: 0;
+  font-weight: 500;
+  /* color: #333; */
+}
+
+.ulasan-item-name h4 {
+  font-size: 0.8rem;
+  margin: 5px 0 0;
+  /* color: #666; */
+  font-weight: normal;
+}
+
+.ulasan-item-review {
+  display: flex;
+  gap: 2px;
+}
+
+.ulasan-item-review ion-icon {
+  color: #ffc107;
+  font-size: 1.2rem;
+}
+
+.ulasan-item-detail {
+  padding: 20px;
+}
+
+.ulasan-item-detail p {
+  margin: 0;
+  color: #f1f1f1;
+  font-size: 0.95rem;
+  line-height: 1.5;
+  text-align: center;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+  .ulasan-items {
+    padding: 0 20px;
+  }
+
+  .ulasan-item {
+    width: 100%;
+    max-width: 400px;
+  }
+}
+
+@media (max-width: 480px) {
+  .review-title h1 {
+    font-size: 2rem;
+  }
+
+  .ulasan-item-identity {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .ulasan-item-review {
+    margin-top: 10px;
+  }
+}

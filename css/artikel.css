@@ -1,0 +1,174 @@
+/* Styling untuk bagian artikel */
+
+#artikel-page {
+  display: flex;
+  flex-direction: column;
+  margin-top: 120px;
+  margin-bottom: 120px;
+  height: 100%;
+}
+
+/* Container utama */
+.artikel-items {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  padding: 20px 50px;
+  background-color: transparent;
+  margin-top: 20px;
+}
+.artikel-item-detail h3 {
+  color: #f1f1f1;
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+/* Styling untuk judul halaman */
+.review-title {
+  text-align: center;
+  margin-bottom: 40px;
+  color: #fff;
+}
+
+.review-title h1 {
+  font-size: 2.5rem;
+  margin-bottom: 15px;
+}
+
+.review-title p {
+  max-width: 700px;
+  margin: 0 auto;
+  color: #ccc;
+}
+
+/* Styling untuk setiap item artikel */
+.artikel-item {
+  background-color: #0a1f35;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.artikel-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4);
+}
+
+/* Styling untuk gambar artikel */
+.artikel-item-img {
+  height: 180px;
+  overflow: hidden;
+}
+
+.artikel-item-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.artikel-item:hover .artikel-item-img img {
+  transform: scale(1.05);
+}
+
+/* Styling untuk identitas artikel */
+.artikel-item-identity {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 20px;
+  border-bottom: 1px solid #1a3045;
+}
+
+.artikel-item-name h3 {
+  font-size: 1.2rem;
+  margin: 0;
+  color: #fff;
+}
+
+.artikel-item-name h4 {
+  font-size: 0.9rem;
+  margin: 5px 0 0;
+  color: #0971a1;
+  font-weight: normal;
+}
+
+.artikel-item-review {
+  display: flex;
+  gap: 2px;
+}
+
+.artikel-item-review ion-icon {
+  color: #ffc107;
+  font-size: 1.2rem;
+}
+
+/* Styling untuk detail artikel */
+.artikel-item-detail {
+  padding: 15px;
+}
+
+.artikel-item-detail p {
+  color: #ccc;
+  font-size: 0.9rem;
+  line-height: 1.5;
+  margin: 0;
+}
+
+/* Styling untuk tombol Learn More */
+.artikel-item-button {
+  padding: 0 15px 15px;
+  text-align: center;
+}
+
+.artikel-item-button a {
+  display: inline-block;
+  background-color: #0971a1;
+  color: white;
+  padding: 8px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-size: 0.9rem;
+  transition: background-color 0.3s ease;
+}
+
+.artikel-item-button a:hover {
+  background-color: #0a5a7a;
+}
+
+/* Media Queries untuk responsivitas */
+@media (max-width: 1024px) {
+  .artikel-items {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .artikel-items {
+    padding: 20px;
+  }
+
+  .review-title h1 {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .artikel-items {
+    grid-template-columns: 1fr;
+  }
+
+  .artikel-item-identity {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .artikel-item-review {
+    margin-top: 10px;
+  }
+
+  .review-title h1 {
+    font-size: 1.8rem;
+  }
+}

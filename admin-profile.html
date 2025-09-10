@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/admin.css" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="shortcut icon" href="./images/Logo-Dolphin-Sound-PNG-Samping.png" type="image/x-icon" />
+    <title>Admin Page</title>
+  </head>
+  <body>
+    <!-- Navigation Bar -->
+    <header class="navigation-bar" id="admin-pages">
+      <div class="navbar-left">
+        <a href="admin.html"><img src="./images/Logo-Dolphin-Sound-PNG-Samping.png" alt="" /></a>
+      </div>
+      <div class="navbar-right">
+        <div class="admin-user">
+          <a href="#">
+            <ion-icon name="person-circle-outline"></ion-icon>
+          </a>
+          <div class="admin-user-name">
+            <h3>Rizki Hanif</h3>
+            <p>Admin</p>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- Navigation Bar -->
+    <div class="hero-page" id="admin-pagess">
+      <div class="profile-form">
+        <div class="profile-form-title">
+          <h3>Profile Admin</h3>
+        </div>
+        <div class="profile-form-nama">
+          <h4>Username Admin :</h4>
+          <h4>DolphinAdmin</h4>
+        </div>
+        <div class="profile-form-pass">
+          <h4>Password Admin :</h4>
+          <div class="password-container">
+            <span id="admin-password" class="hidden-password">••••••••••••</span>
+            <span class="toggle-password" id="toggle-password">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
+                <circle cx="12" cy="12" r="3"></circle>
+              </svg>
+            </span>
+          </div>
+        </div>
+        <div class="profile-form-logout">
+          <a href="#"> <ion-icon name="log-out-outline"></ion-icon>Log Out</a>
+        </div>
+      </div>
+    </div>
+    <!-- Footer -->
+    <!-- copyright -->
+    <div class="copyright-container">
+      <div class="copyright-text">
+        &copy; <span class="copyright-year">2025</span>
+        dolphindaw. All rights reserved.
+      </div>
+    </div>
+    <!-- copyright -->
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const togglePassword = document.getElementById("toggle-password");
+        const passwordElement = document.getElementById("admin-password");
+        const realPassword = "DolphinAdmin";
+        let isPasswordVisible = false;
+
+        togglePassword.addEventListener("click", function () {
+          // Toggle password visibility
+          if (!isPasswordVisible) {
+            passwordElement.textContent = realPassword;
+            passwordElement.classList.remove("hidden-password");
+          } else {
+            passwordElement.textContent = "••••••••••••";
+            passwordElement.classList.add("hidden-password");
+          }
+
+          isPasswordVisible = !isPasswordVisible;
+        });
+      });
+    </script>
+    <!-- SCRIPT Package -->
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <!-- SCRIPT customized -->
+    <script src="/js/script.js"></script>
+    <script src="/js/main.js"></script>
+  </body>
+</html>

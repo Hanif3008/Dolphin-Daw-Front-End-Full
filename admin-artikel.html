@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/admin.css" />
+    <link rel="stylesheet" href="./css/admin-dealer.css" />
+    <link rel="stylesheet" href="./css/admin-produk.css" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="shortcut icon" href="./images/Logo-Dolphin-Sound-PNG-Samping.png" type="image/x-icon" />
+    <title>Admin Artikel Page</title>
+  </head>
+  <body>
+    <!-- Navigation Bar -->
+    <header class="navigation-bar" id="admin-pages">
+      <div class="navbar-left">
+        <a href="admin.html"><img src="./images/Logo-Dolphin-Sound-PNG-Samping.png" alt="" /></a>
+      </div>
+      <div class="navbar-right">
+        <div class="admin-user">
+          <a href="admin-profile.html">
+            <ion-icon name="person-circle-outline"></ion-icon>
+          </a>
+          <div class="admin-user-name">
+            <h3>Rizki Hanif</h3>
+            <p>Admin</p>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- Navigation Bar -->
+    <!-- Hero Admin Page -->
+    <div class="hero-pages" id="admin-page">
+      <div class="hero-pages" id="admin-page">
+        <div class="admin-home-page">
+          <div class="admin-edit-all-menu">
+            <h2><a href="admin.html">Home</a></h2>
+            <h2><a href="admin-produk.html">Produk</a></h2>
+            <h2><a href="admin-dealer.html">Dealer</a></h2>
+            <h2><a href="admin-artikel.html">Artikel</a></h2>
+            <h2><a href="admin-tentangkami.html">Tentang Kami</a></h2>
+            <h2><a href="admin-testimoni.html">Testimoni</a></h2>
+          </div>
+        </div>
+        <div class="admin-home-edit">
+          <div class="admin-home-page-title">
+            <h3 class="home-page-target">Artikel Page Edit</h3>
+          </div>
+          <div class="all-produk-wrapper">
+            <div class="all-produk-items" id="admin-dealer">
+              <table>
+                <thead>
+                  <tr>
+                    <th>No</th>
+                    <th>Judul Artikel</th>
+                    <th>Foto Artikel</th>
+                    <th></th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>1</td>
+                    <td>Penggunaan Headphone Berlebihan</td>
+                    <td class="img-testimoni"><img src="/images/artikel2.jpg" alt="" /></td>
+                    <td class="lihat-selengkapnya"><a href="/admin-artikel-detail.html">Lihat Selengkapnya</a></td>
+                  </tr>
+                  <tr>
+                    <td>2</td>
+                    <td>Penggunaan Headphone Berlebihan</td>
+                    <td class="img-testimoni"><img src="/images/artikel2.jpg" alt="" /></td>
+                    <td class="lihat-selengkapnya"><a href="/admin-artikel-detail.html">Lihat Selengkapnya</a></td>
+                  </tr>
+                  <tr>
+                    <td>3</td>
+                    <td>Penggunaan Headphone Berlebihan</td>
+                    <td class="img-testimoni"><img src="/images/artikel2.jpg" alt="" /></td>
+                    <td class="lihat-selengkapnya"><a href="/admin-artikel-detail.html">Lihat Selengkapnya</a></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="all-produk-pagination">
+              <ul class="pagination">
+                <li class="disabled">
+                  <a href="#" aria-label="Previous">«</a>
+                </li>
+                <li class="active">
+                  <a href="#">1</a>
+                </li>
+                <li>
+                  <a href="#">2</a>
+                </li>
+                <li>
+                  <a href="#">3</a>
+                </li>
+                <li>
+                  <a href="#">4</a>
+                </li>
+                <li>
+                  <a href="#">5</a>
+                </li>
+                <li>
+                  <a href="#" aria-label="Next">»</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="add-produk-wrapper">
+            <div class="add-produk-wrapper-title">
+              <h2>Form Tambah Data Testimoni</h2>
+            </div>
+            <form action="" class="form-add-produk">
+              <div class="add-input-form">
+                <label for="">Judul Artikel</label>
+                <input type="text" id="" name="" placeholder="Masukan Judul Artikel . . ." />
+              </div>
+              <div class="add-input-form">
+                <label for="video-produk">Foto Artikel</label>
+                <input type="file" id="video-produk" name="video_produk" accept="video/*" />
+              </div>
+              <div class="add-input-form">
+                <label for="video-produk">Paragraf 1</label>
+                <textarea name="" id="" placeholder="Masukan Paragraf 1 . . ."></textarea>
+              </div>
+              <div class="add-input-form">
+                <label for="video-produk">Paragraf 2</label>
+                <textarea name="" id="" placeholder="Masukan Paragraf 2 . . ."></textarea>
+              </div>
+              <div class="add-input-form">
+                <label for="video-produk">Paragraf 3</label>
+                <textarea name="" id="" placeholder="Masukan Paragraf 3 . . ."></textarea>
+              </div>
+              <div class="button-add">
+                <button type="submit">Konfirmasi Data Dealer</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Hero Admin Page -->
+    <!-- Footer -->
+    <!-- copyright -->
+    <div class="copyright-container">
+      <div class="copyright-text">
+        &copy; <span class="copyright-year">2025</span>
+        dolphindaw. All rights reserved.
+      </div>
+    </div>
+    <!-- copyright -->
+    <!-- SCRIPT Package -->
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <!-- SCRIPT customized -->
+    <script src="/js/script.js"></script>
+    <script src="/js/main.js"></script>
+  </body>
+</html>
